@@ -183,7 +183,6 @@
     <ClInclude Include="Cheat\Render\Fonts\WeaponIcons.h" />
     <ClInclude Include="Cheat\Render\TestTexture.h" />
     <ClInclude Include="Cheat\steam_sdk\steam_api.h" />
-    <ClInclude Include="Cheat\VMP\VMProtectSDK.h" />
     <ClInclude Include="Cheat\X1API\detours.h" />
     <ClInclude Include="Cheat\X1API\HTTP\CHTTPSession.h" />
     <ClInclude Include="Cheat\X1API\MinHook\hook.h" />
@@ -200,7 +199,6 @@
     <ClInclude Include="Cheat\X1API\X1Vector.h" />
   </ItemGroup>
   <ItemGroup>
-    <Library Include="Cheat\VMP\VMProtectSDK32.lib" />
     <Library Include="Cheat\X1API\detours.lib" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

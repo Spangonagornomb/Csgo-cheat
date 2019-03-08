@@ -6,8 +6,6 @@ CLicense::DllArgs* CLicense::pDllArgs = nullptr;
 
 bool CLicense::Check()
 {
-	VMP_ULTRA("LicenseCheck");
-
 	auto LicCh = [&]()
 	{
 		try
@@ -68,7 +66,6 @@ bool CLicense::Check()
 
 			ADD_LOG("License: Error\n");
 			return false;
-			VMP_END
 		}
 		catch (const exception& e)
 		{
@@ -93,7 +90,6 @@ bool CLicense::CheckMemes()
 
 void CLicense::GetCheatUser()
 {
-	VMP_ULTRA("GetCheatUser")
 	string path;
 	string out;
 	string MainBuffer;
@@ -126,7 +122,6 @@ void CLicense::GetCheatUser()
 		MainSettings().id = HighlightText(("_ID_USER_"), MainBuffer);
 
 	}
-	VMP_END
 }
 
 string CLicense::GetSysDrv()
@@ -281,7 +276,6 @@ string CInternet::CreateError(string ret)
 
 string CInternet::GetData(string URL)
 {
-	VMP_ULTRA("GetData");
 	string OutData = "";
 
 	CHAR szBuffer[1024] = { 0 };
@@ -313,5 +307,4 @@ string CInternet::GetData(string URL)
 	if (hIntSession)InternetCloseHandle(hIntSession);
 
 	return OutData;
-	VMP_END
 }

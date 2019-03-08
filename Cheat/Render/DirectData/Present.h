@@ -30,7 +30,7 @@ HRESULT STDMETHODCALLTYPE myPresent(IDirect3DDevice9* pDevice, CONST RECT* pSour
 
 #ifndef ONLY_DRAW_HOOK
 	CGlobal::IsGameReady = I::Engine()->IsInGame();
-	CGlobal::IsGameReady = I::Engine()->IsConnected();
+	//CGlobal::IsGameReady = I::Engine()->IsConnected();
 #else
 	CGlobal::IsGameReady = false;
 #endif 

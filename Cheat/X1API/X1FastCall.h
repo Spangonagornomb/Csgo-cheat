@@ -314,8 +314,6 @@ private:
 		{ "SetClipboardData", GetProcAddressR(_GetModuleHandle(UTF8ToWstring("User32.dll").c_str()), "SetClipboardData") },
 		{ "EmptyClipboard", GetProcAddressR(_GetModuleHandle(UTF8ToWstring("User32.dll").c_str()), "EmptyClipboard") },
 		{ "CallWindowProcA", GetProcAddressR(_GetModuleHandle(UTF8ToWstring("User32.dll").c_str()), "CallWindowProcA") },
-		{ "VMProtectEnd", GetProcAddressR(_GetModuleHandle(UTF8ToWstring("VMProtectSDK32").c_str()), "VMProtectEnd") },
-		{ "VMProtectBeginUltra", GetProcAddressR(_GetModuleHandle(UTF8ToWstring("VMProtectSDK32").c_str()), "VMProtectBeginUltra") },
 		{ "WinHttpOpenRequest", GetProcAddressR(_GetModuleHandle(UTF8ToWstring("Winhttp.dll").c_str()), "WinHttpOpenRequest") },
 		{ "WinHttpConnect", GetProcAddressR(_GetModuleHandle(UTF8ToWstring("Winhttp.dll").c_str()), "WinHttpConnect") },
 		{ "WinHttpOpen", GetProcAddressR(_GetModuleHandle(UTF8ToWstring("Winhttp.dll").c_str()), "WinHttpOpen") },

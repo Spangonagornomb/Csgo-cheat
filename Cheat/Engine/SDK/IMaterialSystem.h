@@ -289,42 +289,81 @@ namespace SDK
 	class IMaterialSystem
 	{
 	public:
+		/*MaterialHandle_t FirstMaterial(){
+			typedef MaterialHandle_t(__thiscall* FirstMaterialFn)(void*);
+			return GetVFunc<FirstMaterialFn>(this, 86)(this);
+		}
+		MaterialHandle_t InvalidMaterial(){
+			typedef MaterialHandle_t(__thiscall* InvalidMaterialFn)(void*);
+			return GetVFunc<InvalidMaterialFn>(this, 88)(this);
+		}
+		MaterialHandle_t NextMaterial(MaterialHandle_t h){
+			typedef MaterialHandle_t(__thiscall* NextMaterialFn)(void*, MaterialHandle_t);
+			return GetVFunc<NextMaterialFn>(this, 87)(this, h);
+		}
+		IMaterial* GetMaterial(MaterialHandle_t h){
+			typedef IMaterial*(__thiscall* GetMaterialFn)(void*, MaterialHandle_t);
+			return GetVFunc<GetMaterialFn>(this, 89)(this, h);
+		}
+		IMaterial*	CreateMaterialName(const char *pMaterialName, KeyValues *pVMTKeyValues){
+			typedef IMaterial* (__thiscall* oCreateMaterial)(PVOID, const char *, KeyValues*);
+			return GetVFunc<oCreateMaterial>(this, 83)(this, pMaterialName, pVMTKeyValues);
+		}*/
+
+
+		/*MaterialHandle_t NextMaterial(MaterialHandle_t h) {
+			typedef MaterialHandle_t(__thiscall* NextMaterialFn)(void*, MaterialHandle_t);
+			return GetVFunc<NextMaterialFn>(this, 87)(this, h);
+		}
+		MaterialHandle_t FirstMaterial() {
+			typedef MaterialHandle_t(__thiscall* FirstMaterialFn)(void*);
+			return GetVFunc<FirstMaterialFn>(this, 86)(this);
+		}
+		IMaterial* GetMaterial(MaterialHandle_t h) {
+			typedef IMaterial*(__thiscall* GetMaterialFn)(void*, MaterialHandle_t);
+			return GetVFunc<GetMaterialFn>(this, 89)(this, h);
+		}*/
+
+		IMaterial* CreateMaterial(const char* pMaterialName, KeyValues* pVMTKeyValues)
+		{
+			VirtualFn(IMaterial*)(PVOID, const char*, KeyValues*);
+			return GetMethod< OriginalFn >(this, 83)(this, pMaterialName, pVMTKeyValues);
+		}
+
 		IMaterial*	CreateMaterialNew(const char *pMaterialName, KeyValues *pVMTKeyValues)
 		{
 			typedef IMaterial* (__thiscall* oCreateMaterial)(PVOID, const char *, KeyValues*);
-			return GetMethod<oCreateMaterial>(this, 74)(this, pMaterialName, pVMTKeyValues);
+			return call_vfunc<oCreateMaterial>(this, 83)(this, pMaterialName, pVMTKeyValues);
 		}
-		/*
-		IMaterial* FindMaterial( const char* pMaterialName , const char* pTextureGroupName , bool complain = true , const char* pComplainPrefix = 0 )
+
+		IMaterial* FindMaterial(const char* pMaterialName, const char* pTextureGroupName, bool complain = true, const char* pComplainPrefix = 0)
 		{
-			VirtualFn( IMaterial* )( PVOID , const char* , const char* , bool , const char* );
-			return GetVFunc< OriginalFn >( this , 75)( this , pMaterialName , pTextureGroupName , complain , pComplainPrefix );
+			VirtualFn(IMaterial*)(PVOID, const char*, const char*, bool, const char*);
+			return GetMethod< OriginalFn >(this, 84)(this, pMaterialName, pTextureGroupName, complain, pComplainPrefix);
 		}
-		*/
-		//here something else here other func that we not use ..
+
 		MaterialHandle_t FirstMaterial()
 		{
 			typedef MaterialHandle_t(__thiscall* FirstMaterialFn)(void*);
-			return GetMethod <FirstMaterialFn>(this, 77)(this);
+			return GetMethod <FirstMaterialFn>(this, 86)(this);
 		}
 
 		MaterialHandle_t NextMaterial(MaterialHandle_t h)
 		{
 			typedef MaterialHandle_t(__thiscall* NextMaterialFn)(void*, MaterialHandle_t);
-			return GetMethod <NextMaterialFn>(this, 78)(this, h);
+			return GetMethod <NextMaterialFn>(this, 87)(this, h);
 		}
 
 		MaterialHandle_t InvalidMaterial()
 		{
 			typedef MaterialHandle_t(__thiscall* InvalidMaterialFn)(void*);
-			return GetMethod <InvalidMaterialFn>(this, 79)(this);
+			return GetMethod <InvalidMaterialFn>(this, 88)(this);
 		}
 
 		IMaterial* GetMaterial(MaterialHandle_t h)
 		{
 			typedef IMaterial*(__thiscall* GetMaterialFn)(void*, MaterialHandle_t);
-			return GetMethod <GetMaterialFn>(this, 80)(this, h);
+			return GetMethod <GetMaterialFn>(this, 89)(this, h);
 		}
 	};
 }
-                                                                                                                                                                                                                                                                                                                                                         

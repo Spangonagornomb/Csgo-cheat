@@ -1012,30 +1012,6 @@ void CMisc::Night()
 
 void CMisc::FrameStageNotify(ClientFrameStage_t Stage)
 {
-	if (!CGlobal::IsGameReady || !CGlobal::IsConnected)
-		return;
-
-	if (GP_Esp && GP_Esp->SoundEspEnable && CGlobal::IsGameReady && CGlobal::IsConnected && (ClientFrameStage_t)Stage == ClientFrameStage_t::FRAME_NET_UPDATE_END)
-	{
-		CUtlVector<SndInfo_t> sndList;
-		sndList.RemoveAll();
-
-		I::Sound()->GetActiveSounds(sndList);
-
-		for (int i = 0; i < sndList.Count(); i++)
-		{
-			if (!sndList[i].m_pOrigin)
-				continue;
-
-			if (sndList[i].m_nChannel != 4)
-				continue;
-
-			if (!sndList[i].m_bUpdatePositions)
-				continue;
-
-			GP_Esp->PlaySound(*sndList[i].m_pOrigin, sndList[i].m_nSoundSource);
-		}
-	}
 
 }
 
@@ -1149,7 +1125,6 @@ void CHitListener::RegListener()
 
 void CHitListener::UnRegListener()
 {
-	//�����
 	I::GameEvent()->RemoveListener(this);
 }
 

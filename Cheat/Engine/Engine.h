@@ -122,8 +122,6 @@ public:
 	static WEAPON_ID GWeaponID;
 	static bool IsGuiVisble;
 	static bool IsGameReady;
-	static ClientFrameStage_t Stage;
-	static bool IsConnected;
 	static int iScreenWidth;
 	static int iScreenHeight;
 	static string SystemDisk;
@@ -229,7 +227,7 @@ public:
 
 			if (!SearchFunction)
 			{
-				DWORD dwFunctionAddress = CSX::Memory::FindPattern("client_panorama.dll", SMOK_PATTERN, "xxxxxxxx????xxx", 0);
+				DWORD dwFunctionAddress = CSX::Memory::FindPattern("client_panorama.dll", SMOK_PATTERN, ("xxxxxxxx????xxx"), 0);
 
 				if (dwFunctionAddress)
 				{
@@ -242,7 +240,7 @@ public:
 			{
 				return LineGoesThroughSmokeFn(vStartPos, vEndPos);
 			}
-		
+
 			return false;
 		};
 		return LLineGoesThroughSmoke();

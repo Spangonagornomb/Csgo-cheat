@@ -4,7 +4,7 @@
 
 bool CGlobal::IsGuiVisble = false;
 bool CGlobal::IsGameReady = false;
-bool CGlobal::IsConnected = false;
+//bool CGlobal::IsConnected = false;
 int CGlobal::iScreenWidth = 1920;
 int CGlobal::iScreenHeight = 1080;
 string CGlobal::SystemDisk =  "C:\\";

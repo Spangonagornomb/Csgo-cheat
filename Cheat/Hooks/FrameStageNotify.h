@@ -4,16 +4,13 @@
 
 void __fastcall FrameStageNotify(void* ecx, void* edx, int Stage)
 {
-	if (!CGlobal::IsGameReady || !CGlobal::IsConnected)
-		return;
-
 	static auto ofunc = HookTables::pFrameStageNotify->GetTrampoline();
 
 	if ((ClientFrameStage_t)Stage == ClientFrameStage_t::FRAME_NET_UPDATE_POSTDATAUPDATE_START && CGlobal::IsGameReady && GP_Skins)
 		if (GP_Skins->SkinsEnable)
 			GP_Skins->PostDataUpdate();
 
-	if (GP_Esp && GP_Esp->SoundEspEnable && CGlobal::IsGameReady && CGlobal::IsConnected && (ClientFrameStage_t)Stage == ClientFrameStage_t::FRAME_NET_UPDATE_END)
+	if (GP_Esp && GP_Esp->SoundEspEnable && CGlobal::IsGameReady && (ClientFrameStage_t)Stage == ClientFrameStage_t::FRAME_NET_UPDATE_END)
 	{
 		CUtlVector<SndInfo_t> sndList;
 		sndList.RemoveAll();

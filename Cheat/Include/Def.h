@@ -16,10 +16,7 @@
 #define MAX_ENTITY_PLAYERS 64
 
 #ifdef ENABLE_VMP
-#define VMP_VIRTUAL(e) VMProtectBeginVirtualization(e);
-#define VMP_MUTATION(e) VMProtectBeginMutation(e);
-#define VMP_ULTRA(e) VMProtectBeginUltra(e);
-#define VMP_END VMProtectEnd();
+
 #else
 
 #endif 

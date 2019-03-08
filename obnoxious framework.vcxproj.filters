@@ -284,9 +284,6 @@
     <ClInclude Include="Cheat\License\License.h">
       <Filter>License</Filter>
     </ClInclude>
-    <ClInclude Include="Cheat\VMP\VMProtectSDK.h">
-      <Filter>VMP</Filter>
-    </ClInclude>
     <ClInclude Include="Cheat\X1API\HTTP\CHTTPSession.h">
       <Filter>X1API\HTTP</Filter>
     </ClInclude>
@@ -544,9 +541,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Library Include="Cheat\VMP\VMProtectSDK32.lib">
-      <Filter>VMP</Filter>
-    </Library>
     <Library Include="Cheat\X1API\detours.lib">
       <Filter>X1API</Filter>
     </Library>
@@ -581,9 +575,6 @@
     </Filter>
     <Filter Include="Render">
       <UniqueIdentifier>{6829291e-bd1c-490f-b9e3-d3c354a73b44}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="VMP">
-      <UniqueIdentifier>{a09d6f95-581f-4ae7-a7ce-d759890b777a}</UniqueIdentifier>
     </Filter>
     <Filter Include="X1API">
       <UniqueIdentifier>{03f37b99-d864-4887-b758-d00979202e74}</UniqueIdentifier>

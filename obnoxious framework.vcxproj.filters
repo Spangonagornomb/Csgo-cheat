@@ -1,0 +1,640 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Cheat\Main.cpp" />
+    <ClCompile Include="Cheat\3DMenu\3DMenu.cpp">
+      <Filter>3DMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Engine\CSX\CSX_Cvar.cpp">
+      <Filter>Engine\CSX</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Engine\CSX\CSX_Hook.cpp">
+      <Filter>Engine\CSX</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Engine\CSX\CSX_Log.cpp">
+      <Filter>Engine\CSX</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Engine\CSX\CSX_Memory.cpp">
+      <Filter>Engine\CSX</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Engine\CSX\CSX_Utils.cpp">
+      <Filter>Engine\CSX</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Engine\Engine.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Engine\Entity.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Engine\EntityMem.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Engine\GrenadePrediction.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Engine\NetVar.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Engine\Weapon.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\GUI\Gui.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\GUI\Menu.h">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Hacks\Esp\CustomVisuals.cpp">
+      <Filter>Hacks\Esp</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Hacks\Esp\Esp.cpp">
+      <Filter>Hacks\Esp</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Hacks\Esp\MenuEsp.cpp">
+      <Filter>Hacks\Esp</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Hacks\Esp\PlayerEsp.cpp">
+      <Filter>Hacks\Esp</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Hacks\Esp\WorldEsp.cpp">
+      <Filter>Hacks\Esp</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Hacks\GrenadeHelper\GreandeHelper.cpp">
+      <Filter>Hacks\GrenadeHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Hacks\GrenadeHelper\GreandeHelperMenu.cpp">
+      <Filter>Hacks\GrenadeHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Hacks\Inventory\MenuInventory.cpp">
+      <Filter>Hacks\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Hacks\Inventory\EconItem.cpp">
+      <Filter>Hacks\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Hacks\Inventory\Inventory.cpp">
+      <Filter>Hacks\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Hacks\LegitAim\MenuLegitAim.cpp">
+      <Filter>Hacks\LegitAim</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Hacks\LegitAim\LegitAim.cpp">
+      <Filter>Hacks\LegitAim</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Hacks\Misc\MenuMisc.cpp">
+      <Filter>Hacks\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Hacks\Misc\Misc.cpp">
+      <Filter>Hacks\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Hacks\Radar\Radar.cpp">
+      <Filter>Hacks\Radar</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Hacks\Radar\RadarMenu.cpp">
+      <Filter>Hacks\Radar</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Hacks\Skins\DynSkin.cpp">
+      <Filter>Hacks\Skins</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Hacks\Skins\KitParser.cpp">
+      <Filter>Hacks\Skins</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Hacks\Skins\Skins.cpp">
+      <Filter>Hacks\Skins</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Hacks\Skins\MenuSkins.cpp">
+      <Filter>Hacks\Skins</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Hacks\CloudSettings.cpp">
+      <Filter>Hacks</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Hacks\Settings.cpp">
+      <Filter>Hacks</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Hacks\Setup.cpp">
+      <Filter>Hacks</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Include\Headers.h">
+      <Filter>Include</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Initialize\Offsets.cpp">
+      <Filter>Initialize</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\License\base64.cpp">
+      <Filter>License</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\License\License.cpp">
+      <Filter>License</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\X1API\HTTP\CHTTPSession.cpp">
+      <Filter>X1API\HTTP</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\X1API\MinHook\src\buffer.c">
+      <Filter>X1API\MinHook\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\X1API\MinHook\src\trampoline.c">
+      <Filter>X1API\MinHook\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\X1API\MinHook\src\hook.c">
+      <Filter>X1API\MinHook\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\X1API\MinHook\src\HDE\hde32.c">
+      <Filter>X1API\MinHook\src\HDE</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\X1API\MinHook\src\HDE\hde64.c">
+      <Filter>X1API\MinHook\src\HDE</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Render\DXFont.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Render\DXOverlayManager.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Render\DXRenderDraw.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Render\DXRenderInit.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Render\DXRender.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Engine\SDK\CRC.cpp">
+      <Filter>Engine\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Engine\SDK\KeyValues.cpp">
+      <Filter>Engine\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Engine\SDK\SDK.cpp">
+      <Filter>Engine\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Engine\SDK\Vector.cpp">
+      <Filter>Engine\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Engine\SDK\Vector2D.cpp">
+      <Filter>Engine\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Engine\SDK\Vector4D.cpp">
+      <Filter>Engine\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Engine\SDK\VMatrix.cpp">
+      <Filter>Engine\SDK</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cheat\Main.h" />
+    <ClInclude Include="Cheat\3DMenu\3DMenu.h">
+      <Filter>3DMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\CSX\CSX.h">
+      <Filter>Engine\CSX</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\CSX\CSX_Cvar.h">
+      <Filter>Engine\CSX</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\CSX\CSX_Hook.h">
+      <Filter>Engine\CSX</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\CSX\CSX_Log.h">
+      <Filter>Engine\CSX</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\CSX\CSX_Memory.h">
+      <Filter>Engine\CSX</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\CSX\CSX_Utils.h">
+      <Filter>Engine\CSX</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\Engine.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\Entity.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\EntityMem.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\GrenadePrediction.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\NetVar.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\Weapon.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\XorStr.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\GUI\Gui.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Hacks\Esp\Esp.h">
+      <Filter>Hacks\Esp</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Hacks\GrenadeHelper\GreandeHelper.h">
+      <Filter>Hacks\GrenadeHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Hacks\Inventory\EconItem.h">
+      <Filter>Hacks\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Hacks\Inventory\Inventory.h">
+      <Filter>Hacks\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Hacks\LegitAim\LegitAim.h">
+      <Filter>Hacks\LegitAim</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Hacks\Misc\Misc.h">
+      <Filter>Hacks\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Hacks\Radar\Radar.h">
+      <Filter>Hacks\Radar</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Hacks\Skins\DynSkin.h">
+      <Filter>Hacks\Skins</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Hacks\Skins\Skins.h">
+      <Filter>Hacks\Skins</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Hacks\CloudSettings.h">
+      <Filter>Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Hacks\Settings.h">
+      <Filter>Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Hacks\Setup.h">
+      <Filter>Hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Include\Winheaders.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Include\Def.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Initialize\Initialize.h">
+      <Filter>Initialize</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Initialize\Offsets.h">
+      <Filter>Initialize</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Json\Json.hpp">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\License\base64.h">
+      <Filter>License</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\License\License.h">
+      <Filter>License</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\VMP\VMProtectSDK.h">
+      <Filter>VMP</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\X1API\HTTP\CHTTPSession.h">
+      <Filter>X1API\HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\X1API\MinHook\MinHook.h">
+      <Filter>X1API\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\X1API\MinHook\src\buffer.h">
+      <Filter>X1API\MinHook\src</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\X1API\MinHook\hook.h">
+      <Filter>X1API\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\X1API\MinHook\src\trampoline.h">
+      <Filter>X1API\MinHook\src</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\X1API\MinHook\src\HDE\hde32.h">
+      <Filter>X1API\MinHook\src\HDE</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\X1API\MinHook\src\HDE\hde64.h">
+      <Filter>X1API\MinHook\src\HDE</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\X1API\MinHook\src\HDE\table32.h">
+      <Filter>X1API\MinHook\src\HDE</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\X1API\MinHook\src\HDE\table64.h">
+      <Filter>X1API\MinHook\src\HDE</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\X1API\MinHook\src\HDE\pstdint.h">
+      <Filter>X1API\MinHook\src\HDE</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\X1API\X1FastCall.h">
+      <Filter>X1API</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\X1API\X1Vector.h">
+      <Filter>X1API</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\X1API\detours.h">
+      <Filter>X1API</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\X1API\ThreadInMemory.h">
+      <Filter>X1API</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Render\DirectData\EndScene.h">
+      <Filter>Render\DirectData</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Render\DirectData\Reset.h">
+      <Filter>Render\DirectData</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Render\DirectData\Present.h">
+      <Filter>Render\DirectData</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Render\Fonts\Arial.h">
+      <Filter>Render\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Render\Fonts\stb_rect_pack.h">
+      <Filter>Render\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Render\Fonts\stb_truetype.h">
+      <Filter>Render\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Render\Fonts\WeaponIcons.h">
+      <Filter>Render\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Render\Fonts\Tahoma.h">
+      <Filter>Render\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Render\color.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Render\DXOverlayManager.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Render\DXFont.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Render\DXRender.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Render\TestTexture.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Hooks\CreateMove.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Hooks\DrawModelExecute.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Hooks\Views.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Hooks\Tables.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Hooks\Render.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Hooks\Sound.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Hooks\Hook.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Hooks\FrameStageNotify.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\BaseTypes.h">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\ButtonCode.h">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\CBaseEntity.h">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\CGlobalVarsBase.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\CHandle.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\CInput.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\ClientClass.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\Color.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\Const.h">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\CRC.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\CVar.h">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\Definitions.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\IAppSystem.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\IBaseClientDll.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\IClientEntity.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\IClientEntityList.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\IClientMode.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\IClientNetworkable.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\IClientRenderable.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\IClientThinkable.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\IClientUnknown.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\ICollideable.h">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\IDebugOverlay.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\IEngineSound.h">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\IEngineTrace.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\IGameEvent.h">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\IHandleEntity.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\ILocalize.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\IMaterial.h">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\IMaterialSystem.h">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\InputEnums.h">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\ISurface.h">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\IVEngineClient.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\IVModelInfoClient.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\IVModelRender.h">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\IVRenderView.h">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\KeyValues.h">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\Vplane.h">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\memalloc.h">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\PlayerInfo.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\QAngle.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\Recv.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\RecvCommon.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\SDK.h">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\TextureGroupNames.h">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\Vector.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\Vector2D.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\Vector4D.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Engine\SDK\VMatrix.hpp">
+      <Filter>Engine\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\steam_sdk\steam_api.h">
+      <Filter>steam_sdk</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Cheat\VMP\VMProtectSDK32.lib">
+      <Filter>VMP</Filter>
+    </Library>
+    <Library Include="Cheat\X1API\detours.lib">
+      <Filter>X1API</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="3DMenu">
+      <UniqueIdentifier>{f12118ac-fd5e-426b-8167-1b875fc3a831}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{54d00573-2776-465b-b25b-9a7075dd6ad0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{5469e5ef-ba8f-4479-957a-0df23767e35c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hacks">
+      <UniqueIdentifier>{f158a8e0-589e-492d-993d-07cbc54f348a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks">
+      <UniqueIdentifier>{d2246155-574c-4ddd-a646-49b346f93fee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{95fd6b9d-2420-4b43-96d3-1c736210554e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Initialize">
+      <UniqueIdentifier>{05726939-1977-4ef5-abd2-0f1c7ceaac1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Json">
+      <UniqueIdentifier>{edbe6c75-697e-470e-9492-1699cf54f433}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="License">
+      <UniqueIdentifier>{04ed62b9-85b2-4ab1-8889-d250b8b6772f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render">
+      <UniqueIdentifier>{6829291e-bd1c-490f-b9e3-d3c354a73b44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VMP">
+      <UniqueIdentifier>{a09d6f95-581f-4ae7-a7ce-d759890b777a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="X1API">
+      <UniqueIdentifier>{03f37b99-d864-4887-b758-d00979202e74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\CSX">
+      <UniqueIdentifier>{45881dc7-a42b-425c-9494-7ff37ac1463f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\SDK">
+      <UniqueIdentifier>{97b1749c-5e42-448b-b981-b9cf247b387a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hacks\Esp">
+      <UniqueIdentifier>{24a95fe6-0d0d-475b-92df-5553513e7e67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hacks\GrenadeHelper">
+      <UniqueIdentifier>{93bb9c82-8fee-40b6-a5ef-15c8fdabc982}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hacks\Inventory">
+      <UniqueIdentifier>{fe3cc4f8-200b-4a56-bb0c-d9aecc745ae7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hacks\LegitAim">
+      <UniqueIdentifier>{98cb73d1-5a72-4676-92fd-40d85dd4cfa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hacks\Misc">
+      <UniqueIdentifier>{ac1168f0-1f5d-4f65-b11d-0b0fc8990ee4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hacks\Radar">
+      <UniqueIdentifier>{c3e1acb4-5ac6-417b-819f-8ee740bb7810}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hacks\Skins">
+      <UniqueIdentifier>{1004cc64-aaa1-463e-aeba-e59316916888}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="X1API\HTTP">
+      <UniqueIdentifier>{9f188fdb-c333-4ea9-afbd-722bc0816e60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="X1API\MinHook">
+      <UniqueIdentifier>{8f23c2de-3e77-4f75-9da6-18e544a211e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="X1API\MinHook\src">
+      <UniqueIdentifier>{f2ba0c36-3b19-4f05-a5b9-00d93561e787}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="X1API\MinHook\src\HDE">
+      <UniqueIdentifier>{6f2f22a6-956c-4606-b3e5-34db17ecbb39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render\DirectData">
+      <UniqueIdentifier>{40352bc6-5cd0-45a3-8117-5d9088ffeb48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render\Fonts">
+      <UniqueIdentifier>{9822342e-ddcc-4969-8b0d-f4b859c4b736}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="steam_sdk">
+      <UniqueIdentifier>{b4dc45bb-b5aa-490f-be49-2cf3b966efbb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

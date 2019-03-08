@@ -1305,7 +1305,7 @@ void CHitListener::Draw()
 		}
 
 		if (GP_Misc->HitSound)
-		{/*
+		{
 			if (PlaySound)
 			{
 				if (!GP_Misc->SoundList.empty() && GP_Misc->HitSoundStyle >= 0 && GP_Misc->HitSoundStyle < (int)GP_Misc->SoundList.size())
@@ -1314,7 +1314,7 @@ void CHitListener::Draw()
 
 				PlaySound = false;
 			}
-			*/
+			
 		}
 	}
 
